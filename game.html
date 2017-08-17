@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Test your short memory</title>
+      <link rel="stylesheet" href="css/game.css">
+      
+      <style>
+          body {
+              background: url(images/2728);
+          }
+      .start
+          {
+              position: relative;
+              margin-top: 150px;
+              margin-left: 400px;
+              font-size: 51px;
+              text-align: center;
+              width: 200px;
+              height: 200px;
+              background-color: bisque;
+    border: 1px solid bisque;
+          }
+          
+          .show
+          {
+              display: none;
+              margin-left: 396px;
+    margin-top: 36px;
+    width: 178px;
+    font-size: 20px;
+    height: 46px;
+              background-color: bisque;
+    border: 1px solid bisque;
+          }
+          .try
+          {
+              display: none;
+              left: 425px;
+    top: 431px;
+    width: 208px;
+    font-size: 20px;
+    height: 46px;
+              position: absolute;
+              background-color: bisque;
+    border: 1px solid bisque;
+          }
+          
+          .div
+          .div1
+          .div2
+          {display: none}
+          
+          
+       input
+          {
+              display: none;
+    margin-top: 12px;
+    margin-left: 268px;
+    width: 420px;
+    height: 59px;
+              font-size: 55px;
+              background: rgba(135, 165, 42, 0.69);
+          }
+          .result
+          {
+              padding-left: 11px;
+    padding-top: 207px;
+              display: none;
+                  text-align: center;
+    font-size: 61px;
+          }
+          
+         .numbers
+          {
+              background-color: rgba(0, 0, 0, 0.7);
+              color: yellow;
+          }
+          h2
+          {
+              padding-top: 95px;
+          }
+      
+      
+      </style>
+      
+  </head> 
+   <body>
+       
+       
+
+<div class="numbers" style="width:1000px; height:500px;position:absolute; top: 100px;left:140px">
+<button id="start" class="start">Start</button>
+<p class="1" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color:green"></p>
+<p class="2" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color:#f90e9b"></p>
+<p class="3" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color:yellow"></p>
+<p class="4" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px; color:red"></p>
+<p id="5" class="5" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color:aqua"></p>
+<p id="6" class="6" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color:burlywood "></p>
+<p id="7" class="7" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color:chartreuse"></p>
+<p id="8" class="8" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px;color: darkred"></p>
+<p id="9" class="9" style="width:200px;height:200px;display:none;border-radius:50%; background:transparent;margin:auto;text-align:center;padding-top:60px;font-size:300px"></p>
+<p id="10" class="10" style="width:200px;height:200px;display:none;border-radius:50%; background-color: rgba(0, 0, 0, 0.7);margin:auto;text-align:center;padding-top:60px;font-size:300px;color:#687108"></p>
+<p id="11" class="11" style="width:200px;height:200px;display:none;border-radius:50%; background-color: rgba(0, 0, 0, 0.7);margin:auto;text-align:center;padding-top:60px;font-size:300px;color:orange"></p>
+<p id="12" class="12" style="width:200px;height:200px;display:none;border-radius:50%; background-color: rgba(0, 0, 0, 0.7);margin:auto;text-align:center;padding-top:60px;font-size:300px"></p>
+<p id="13" class="13" style="width:200px;height:200px;display:none;border-radius:50%; background-color: rgba(0, 0, 0, 0.7);margin:auto;text-align:center;padding-top:60px;font-size:300px"></p>
+<p id="14" class="14" style="width:200px;height:200px;display:none;border-radius:50%; background-color: rgba(0, 0, 0, 0.7);margin:auto;text-align:center;padding-top:60px;font-size:300px"></p>
+<p id="15" class="15" style="width:200px;height:200px;display:none;border-radius:50%; background-color: rgba(0, 0, 0, 0.7);margin:auto;text-align:center;padding-top:60px;font-size:300px"></p>
+<h2 style="display:none;margin-left:326px;
+    width: 360px;
+    height: 59px;">Hurry and put your numbers!</h2>
+<input type="text" id="your">
+<button class="show" id="show">show result</button>
+<button class="try" id="try">Start New game</button>
+<div class="result" id="result" style="display">Oh, no<br> please, try again</div>
+</div>
+<div class="div" id="div" style="background:yellow; display:none"></div>
+<div class="div1" id="div1" style="background:yellow; display:none"></div>
+<div class="div2" id="div2" style="background:yellow; display:none"></div>
+
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/game.js"></script>
+   </body> 
+    
+    
+    
+</html>
+
+
+
+
+
+
+
+
